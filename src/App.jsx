@@ -9,7 +9,6 @@ function App(props) {
       <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h2>{props.translate("welcome.headline")}</h2>
-      
         <p className="App-intro">
           <FormattedMessage
             id="welcome.intro"
