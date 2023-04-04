@@ -1,18 +1,13 @@
 phrase:
+  access_token: c2f7ffce1939bdfb6df393e6b8615072a9f803980f5d7eca2afe729548454d6d
   project_id: 554fe040bdb0fad1f9241345900a9511
-
-  file_format: yml
-
   push:
     sources:
-      - file: ./config/locales/.yml
-
-        params:
-          file_format: yml
-
+    - file: ./<locale_name>.json
+      params:
+        file_format: react_simple_json
   pull:
     targets:
-      - file: ./config/locales/;.yml
-
-        params:
-          file_format: yml
+    - file: ./<locale_name>.json
+      params:
+        file_format: react_simple_json
