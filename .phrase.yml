@@ -1,0 +1,12 @@
+phrase:
+  project_id: 554fe040bdb0fad1f9241345900a9511
+  push:
+    sources:
+    - file: ./src/config/<locale_name>.json
+      params:
+        file_format: react_simple_json
+  pull:
+    targets:
+    - file: ./src/config/<locale_name>.json
+      params:
+        file_format: react_simple_json
